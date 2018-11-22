@@ -1,7 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net461</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <Authors>f14shm4n</Authors>
+    <Company>f14shm4n</Company>
+    <Description>Provides classes and utilities for building parsers uses XPath selectors.</Description>
+    <Copyright>f14shm4n</Copyright>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/f14shm4n/f14.XPath</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/f14shm4n/f14.XPath</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>NetStandard;Common</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
 
 </Project>
